@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+/*@
+  font-family: "Lexend Deca", serif;
+*/
+
+/*@
+    font-family: "Inter", serif;
+*/
+
+:root {
+  --Very-dark-blue: hsl(233, 47%, 7%);
+  --Dark-desaturated-blue: hsl(244, 38%, 16%);
+  --Soft-violet: hsl(277, 64%, 61%);
+
+  --White: hsl(0, 0%, 100%);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+  --Slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lexend Deca", serif;
+  background-color: var(--Very-dark-blue);
+  height: 100vh;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 5;
+}
+
+.box {
+  max-width: 65rem;
+  background-color: var(--Dark-desaturated-blue);
+  display: flex;
+  margin: 15rem 0;
+  border-radius: 10px;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container .image-header {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: opacity 0.3s ease;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.insights-text {
+  order: -1;
+  color: var(--White);
+  margin: 4rem;
+}
+
+img {
+  height: auto;
+  width: auto;
+  display: block;
+}
+
+span {
+  color: var(--Soft-violet);
+}
+
+@media screen and (max-width: 650px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 2rem;
+    margin: 10px;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .insights-text {
+    order: 1;
+  }
+  .image-container .image-header {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+  }
+}
