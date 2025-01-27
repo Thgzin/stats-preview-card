@@ -95,7 +95,6 @@ body {
   margin-top: 30px;
   color: var(--Slightly-transparent-white);
   font-size: 15px;
-  
 }
 
 span {
@@ -124,7 +123,6 @@ span {
   color: var(--Slightly-transparent-white);
   font-size: 12px;
   letter-spacing: 1.5px;
-
 }
 
 @media screen and (max-width: 650px) {
@@ -140,7 +138,6 @@ span {
     flex-direction: column;
     border-radius: 2rem;
     margin: 10px;
-    height:120vh;
   }
 
   .container {
@@ -170,15 +167,14 @@ span {
     text-align: center;
     font-size: 17px;
   }
-  .companies-section{
+  .companies-section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  
   }
 
-  .companies-section h3{
+  .companies-section h3 {
     text-align: center;
   }
 }
